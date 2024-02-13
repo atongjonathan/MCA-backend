@@ -1,0 +1,287 @@
+/***** CSS RESET*****/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/**************************************************************************************************
+************************************************HEADER SECTION****************************************
+****************************************************************************************************/
+
+
+
+header{
+	margin: 0;
+	padding: 0;
+}
+nav{
+	position: relative;
+	width: 100%;
+	height: 70px;
+	background: #fff;
+	box-shadow: 0 4px 3px rgba(0,0,0,0.25);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+/********************************Company logo ************************/
+.logo img{
+	height: 50px;
+	object-fit: contain;
+}
+/************************Navbar menu list**************************/
+.navbar_list{
+	display: flex;
+	list-style: none;
+
+}
+.navbar_list li{
+	margin: 0px 10px;
+	font-weight: 500;
+	font-size: large;
+	color: rgb(43, 43, 43);
+    cursor: pointer;
+}
+
+.navbar_list li a{
+    text-decoration: none;
+	color: rgb(43, 43, 43);
+}
+
+.navbar_list li a:hover{
+	color: green;
+}
+
+/**********************navbar sign in button*********************/
+
+.nav_signin_btn button{
+	padding: 10px 20px;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	background-color: green;
+	color: #fff;
+	font-size: 14px;
+}
+.nav_hamburger_menu{
+	display: none;
+	right: 80px;
+
+}
+.nav_hamburger_menu img{
+	height: 30px;
+}
+
+.nav_active{
+	display: none;
+}
+
+/*************************Navbar Responsive Screen******************/
+
+@media screen and (max-width: 600px){
+	.navbar_list, .nav_signin_btn{
+		display: none;
+	}
+	.nav_hamburger_menu{
+		display: block;
+	}
+
+
+	.nav_active{
+		width: 35%;
+		position: absolute;
+		top: 90;
+		right: 0;
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #fff;
+		padding: 30px 20px;
+		margin-right: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	.navbar_list_active{
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+	
+	}
+	.navbar_list_active li{
+		margin: 5px 10px;
+		font-weight: 500;
+		font-size: large;
+		color: rgb(43, 43, 43);
+		cursor: pointer;
+	}
+	
+	.navbar_list_active li a{
+		text-decoration: none;
+		color: rgb(43, 43, 43);
+	}
+	
+	.navbar_list_active li a:hover{
+		color: green;
+	}
+	.nav_signin_btn_active{
+		margin-top: 20px;
+	}
+	.nav_signin_btn_active button{
+		padding: 10px 20px;
+		border-radius: 20px;
+		outline: none;
+		border: none;
+		background-color: green;
+		color: #fff;
+		font-size: 14px;
+	}
+
+	.n_active{
+		display: flex;
+	}
+	
+	
+	
+}
+
+
+
+
+
+main{
+    /*background-color: green;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.registration{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 60%;
+}
+
+.registration_header{
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
+.registration_header h1{
+    font-size: 48px;
+    padding: 10px;
+}
+.registration_header p{
+    font-size: 21px;
+    padding: 10px;
+}
+
+.registration_body{
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration_input{
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px 10px;
+}
+.registration_input label{
+    padding: 10px 0px;
+}
+.registration_input input{
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(44, 44, 44);
+}
+.reg_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.reg_btn button{
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 200px;
+}
+
+
+
+
+
+
+/******************** Footer Section ***************/
+
+
+
+footer{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: rgb(44, 44, 44);
+	color: #fff;
+	padding: 50px;
+}
+.footer_company_about{
+	max-width: 400px;
+	padding: 20px 5px;
+}
+.footer_company_about h3{
+	padding: 10px 0px;
+	font-size: 30px;
+}
+.footer_company_about p{
+	padding: 10px 0px;
+	font-size: 16px;
+}
+
+.footer_navbar_links{
+	padding: 20px 5px;
+	max-width: 300px;
+}
+.footer_navbar_links ul{
+	list-style: none;
+	padding: 10px 20px;
+}
+.footer_navbar_links ul li{
+	padding: 2px;
+}
+.footer_navbar_links ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+.footer_navbar_links ul li a:hover{
+	color: green;
+}
+.footer_contacts{
+	max-width: 300px;
+}
+.footer_contacts p{
+	margin-top: 10px;
+}

@@ -1,0 +1,674 @@
+
+/***** CSS RESET*****/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	position: relative;
+}
+
+
+
+/**************************************************************************************************
+************************************************HEADER SECTION****************************************
+****************************************************************************************************/
+
+
+
+header{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+
+nav{
+	position: relative;
+	width: 100%;
+	height: 70px;
+	background: #fff;
+	box-shadow: 0 4px 3px rgba(0,0,0,0.25);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+/********************************Company logo ************************/
+.logo img{
+	height: 50px;
+	object-fit: contain;
+}
+/************************Navbar menu list**************************/
+.navbar_list{
+	display: flex;
+	list-style: none;
+
+}
+.navbar_list li{
+	margin: 0px 10px;
+	font-weight: 500;
+	font-size: large;
+	color: rgb(43, 43, 43);
+	cursor: pointer;
+}
+
+.navbar_list li a{
+    text-decoration: none;
+	color: rgb(43, 43, 43);
+}
+
+.navbar_list li a:hover{
+	color: green;
+}
+
+
+/**********************navbar sign in button*********************/
+
+.nav_signin_btn button{
+	padding: 10px 20px;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	background-color: green;
+	color: #fff;
+	font-size: 14px;
+}
+.nav_hamburger_menu{
+	display: none;
+	right: 80px;
+
+}
+.nav_hamburger_menu img{
+	height: 30px;
+}
+
+
+.nav_active{
+	display: none;
+}
+
+/*************************Navbar Responsive Screen******************/
+
+@media screen and (max-width: 600px){
+	.navbar_list, .nav_signin_btn{
+		display: none;
+	}
+	.nav_hamburger_menu{
+		display: block;
+	}
+
+
+	.nav_active{
+		width: 35%;
+		position: absolute;
+		top: 90;
+		right: 0;
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #fff;
+		padding: 30px 20px;
+		margin-right: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	.navbar_list_active{
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+	
+	}
+	.navbar_list_active li{
+		margin: 5px 10px;
+		font-weight: 500;
+		font-size: large;
+		color: rgb(43, 43, 43);
+		cursor: pointer;
+	}
+	
+	.navbar_list_active li a{
+		text-decoration: none;
+		color: rgb(43, 43, 43);
+	}
+	
+	.navbar_list_active li a:hover{
+		color: green;
+	}
+	.nav_signin_btn_active{
+		margin-top: 20px;
+	}
+	.nav_signin_btn_active button{
+		padding: 10px 20px;
+		border-radius: 20px;
+		outline: none;
+		border: none;
+		background-color: green;
+		color: #fff;
+		font-size: 14px;
+	}
+
+	.n_active{
+		display: flex;
+	}
+	
+	
+	
+}
+
+
+
+/**************************************************************************************************
+************************************************BODY SECTION****************************************
+****************************************************************************************************/
+
+
+
+
+main{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+/******************************SECTION ONE**************************/
+
+
+/******************** Intoduction Section ***************/
+.intro_section{
+	background-color: green;
+	max-height: 90dvh;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+/*************Content***********/
+.intro_content{
+	flex: 1.8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 400px;
+}
+.intro_container{
+	margin: 40px;
+	padding: 20px;
+	width: 80%;
+}
+.intro_content_title{
+	font-size: 72px;
+	color: #fff;
+}
+.intro_content_description{
+	color: #fff;
+	font-size: 20px;
+	margin-top: 20px;
+}
+.intro_content_button{
+	margin: 30px 0px 0px;
+}
+.intro_content_button button{
+	font-size: 1.2rem;
+	padding: 10px 30px;
+	border-radius: 10px;
+	outline: none;
+}
+a .intro_content_button_explore{
+	text-decoration: none;
+}
+.intro_content_button_explore{
+	background-color: #fff;
+	border:none;
+	color: green;
+}
+.intro_content_button_explore:hover{
+	background-color: yellow;
+}
+.intro_content_button_register{
+	border: 2px solid #fff;
+	background-color: transparent;
+	color: #fff;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+.intro_content_button_register:hover{
+	background-color: #fff;
+	color: rgb(72, 72, 72);
+}
+
+/*************** Introduction Photo *********/
+
+.intro_photo{
+	flex: 1.2;
+	max-height: 90dvh;
+	min-width: 400px;
+}
+.intro_photo img{
+	width: 100%;
+	height: 90dvh;
+	object-fit: cover;
+}
+
+/******** Media Query for Responsive *********/
+@media screen and (max-width: 320px){
+
+	.intro_container{
+		margin: 5px;
+		padding: 5px;
+		width: 100%;
+	}
+	.intro_container h1{
+		font-size: 36px;
+	}
+	.intro_container p{
+		font-size: 18px;
+	}
+	.intro_content{
+		min-width: 300px;
+	}
+	
+	.intro_content_description{
+		margin-top: 20px;
+	}
+	.intro_photo img{
+		width: 60%;
+		max-height: 30dvh;
+		object-fit: cover;
+	}
+	
+}
+
+@media screen and (max-width: 800px){
+
+	.intro_container{
+		margin: 30px;
+		padding: 20px;
+		width: 80%;
+	}
+	.intro_content_title{
+		font-size: 32px;
+	}
+	.intro_content_description{
+		font-size: 18px;
+		margin-top: 20px;
+	}
+	.intro_photo img{
+		width: 100%;
+		max-height: 30dvh;
+		object-fit: cover;
+	}
+	
+}
+
+@media screen and ( max-width: 1024px){
+	.intro_container{
+		margin: 20px;
+		padding: 20px;
+		width: 80%;
+	}
+	.intro_content_title{
+		font-size: 48px;
+	}
+	.intro_content_description{
+		font-size: 18px;
+		margin-top: 20px;
+	}
+	.intro_content_button_explore{
+		margin-bottom: 20px;
+	}
+	
+
+}
+
+
+
+/******************************SECTION TWO**************************/
+
+
+/******************** About Section ***************/
+
+
+.about{
+	margin: 50px 20px 20px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: rgb(49, 49, 49);
+}
+.about_header{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.about_header h4{
+	color: green;
+	font-size: 24px;
+}
+.about_header h1{
+	font-size: 81px;
+}
+.about_body{
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.about_img{
+	flex: 1;
+	max-width: 400px;
+	margin: 50px;
+}
+.about_img img{
+	max-width: 400px;
+	object-fit: contain;
+}
+.about_body_content{
+	flex: 1;
+	max-width: 400px;
+}
+.about_body_content_card{
+	padding: 20px 10px;
+	margin: 10px;
+	max-width: 400px;
+
+}
+.about_body_content_card h3{
+	font-size: 28px;
+	padding: 10px 20px;
+}
+.about_body_content_card p{
+	padding: 10px 20px;
+}
+.about_body_content .dark_card{
+	background-color: rgb(39, 39, 39);
+	color: #fff;
+	border-radius: 20px;
+}
+
+
+/******** Media Query for Responsive *********/
+
+
+@media screen and (max-width: 800px){
+
+	.about{
+		margin-top: 100px;
+	}
+	.about_header h1{
+		font-size: 56px;
+	}
+}
+
+@media screen and (max-width: 400px){
+
+	.about_header h1{
+		font-size: 42px;
+	}
+	.about_header h4{
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.about_img{
+		max-width: 250px;
+	}
+	.about_img img{
+		max-width: 250px;
+		object-fit: contain;
+	}
+}
+
+
+
+/******************************SECTION THREE**************************/
+
+
+/******************** Service Section ***************/
+
+
+
+
+.service{
+	margin: 50px 0px;
+	padding: 80px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: rgb(49, 49, 49);
+	background-color: rgb(234, 231, 231);
+}
+.service_header{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 30px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.service_header h4{
+	color: green;
+	font-size: 24px;
+	margin: 10px 0px;
+}
+.service_header h1{
+	font-size: 81px;
+	margin: 10px 0px;
+	text-align: center;
+}
+.service_header p{
+	font-size: 18px;
+	font-weight: 600;
+	max-width: 600px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+.service_body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 80px 0px 50px;
+	flex-wrap: wrap;
+}
+.service_body_card{
+	max-width: 400px;
+	background-color: #fff;
+	margin: 30px;
+	box-shadow: 0 4px 3px rgba(0,0,0,0.25);
+	border-radius: 20px;
+}
+
+.service_body_photo{
+	max-width: 400px;
+}
+.service_body_photo img{
+	max-width: 400px;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	object-fit: contain;
+}
+.service_body_content{
+	padding: 20px;
+}
+.service_body_content h3{
+	padding: 10px 20px;
+	font-size: 28px;
+}
+.service_body_content p{
+	padding: 10px 20px;
+}
+
+.service_body_content button{
+	padding: 10px 20px;
+	margin: 10px 20px;
+	background-color: green;
+	color: #fff;
+	outline: none;
+	border: none;
+	border-radius:15px;
+	font-size: 16px;
+}
+
+.service_body_content button:hover{
+	background-color: rgb(66, 66, 66);
+}
+
+
+@media screen and (max-width: 800px){
+
+	.service_header h1{
+		font-size: 56px;
+	}
+
+}
+
+@media screen and (max-width: 400px){
+
+	.service_header h1{
+		font-size: 42px;
+	}
+	.service_header h4{
+		font-size: 18px;
+	}
+	.service_header p{
+		font-size: 16px;
+	}
+	.service_body_card{
+		max-width: 300px;
+	}
+	.service_body_photo{
+		max-width: 300px;
+	}
+	.service_body_photo img{
+		max-width: 300px;
+	}
+}
+
+
+/******************************SECTION FOUR**************************/
+
+
+/******************** Register Section ***************/
+
+
+.register{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 80px 0px;
+}
+.register_body{
+	text-align: center;
+}
+.register_body h2{
+	padding: 10px 0px;
+	font-size: 64px;
+	color: rgb(44, 44, 44);
+
+}
+.register_body p{
+	padding: 5px 0px;
+	font-size: 21px;
+}
+.register_body button{
+	margin-top: 20px;
+	padding: 12px 25px;
+	background-color: rgb(44, 44, 44);
+	color: #fff;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	font-size: 18px;
+}
+.register_body button:hover{
+	background-color: green;
+}
+
+@media screen and (max-width: 800px){
+
+	.register_body h2{
+		font-size: 42px;
+	}
+
+}
+
+@media screen and (max-width: 400px){
+
+	.register_body h2{
+		font-size: 36px;
+	}
+	.register_body p{
+		font-size: 16px;
+	}
+}
+
+
+
+
+/******************************SECTION FIVE**************************/
+
+
+/******************** Footer Section ***************/
+
+
+
+footer{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: rgb(44, 44, 44);
+	color: #fff;
+	padding: 50px;
+}
+.footer_company_about{
+	max-width: 400px;
+	padding: 20px 5px;
+}
+.footer_company_about h3{
+	padding: 10px 0px;
+	font-size: 30px;
+}
+.footer_company_about p{
+	padding: 10px 0px;
+	font-size: 16px;
+}
+
+.footer_navbar_links{
+	padding: 20px 5px;
+	max-width: 300px;
+}
+.footer_navbar_links ul{
+	list-style: none;
+	padding: 10px 20px;
+}
+.footer_navbar_links ul li{
+	padding: 2px;
+}
+.footer_navbar_links ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+.footer_contacts{
+	max-width: 300px;
+}
+.footer_contacts p{
+	margin-top: 10px;
+}
