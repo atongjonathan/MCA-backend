@@ -1,0 +1,274 @@
+/***** CSS RESET*****/
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/**************************************************************************************************
+************************************************HEADER SECTION****************************************
+****************************************************************************************************/
+
+
+
+header{
+	margin: 0;
+	padding: 0;
+}
+nav{
+	position: relative;
+	width: 100%;
+	height: 70px;
+	background: #fff;
+	box-shadow: 0 4px 3px rgba(0,0,0,0.25);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+/********************************Company logo ************************/
+.logo img{
+	height: 50px;
+	object-fit: contain;
+}
+/************************Navbar menu list**************************/
+.navbar_list{
+	display: flex;
+	list-style: none;
+
+}
+.navbar_list li{
+	margin: 0px 10px;
+	font-weight: 500;
+	font-size: large;
+	color: rgb(43, 43, 43);
+    cursor: pointer;
+}
+.navbar_list li a{
+    text-decoration: none;
+	color: rgb(43, 43, 43);
+}
+
+.navbar_list li a:hover{
+	color: green;
+}
+/**********************navbar sign in button*********************/
+
+.nav_signin_btn button{
+	padding: 10px 20px;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	background-color: green;
+	color: #fff;
+	font-size: 14px;
+}
+.nav_hamburger_menu{
+	display: none;
+	right: 80px;
+
+}
+.nav_hamburger_menu img{
+	height: 30px;
+}
+
+.nav_active{
+	display: none;
+}
+
+
+/*************************Navbar Responsive Screen******************/
+
+
+@media screen and (max-width: 600px){
+	.navbar_list, .nav_signin_btn{
+		display: none;
+	}
+	.nav_hamburger_menu{
+		display: block;
+	}
+
+
+	.nav_active{
+		width: 35%;
+		position: absolute;
+		top: 90;
+		right: 0;
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #fff;
+		padding: 30px 20px;
+		margin-right: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		z-index: 1000;
+	}
+	.navbar_list_active{
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+	
+	}
+	.navbar_list_active li{
+		margin: 5px 10px;
+		font-weight: 500;
+		font-size: large;
+		color: rgb(43, 43, 43);
+		cursor: pointer;
+	}
+	
+	.navbar_list_active li a{
+		text-decoration: none;
+		color: rgb(43, 43, 43);
+	}
+	
+	.navbar_list_active li a:hover{
+		color: green;
+	}
+	.nav_signin_btn_active{
+		margin-top: 20px;
+	}
+	.nav_signin_btn_active button{
+		padding: 10px 20px;
+		border-radius: 20px;
+		outline: none;
+		border: none;
+		background-color: green;
+		color: #fff;
+		font-size: 14px;
+	}
+
+	.n_active{
+		display: flex;
+	}
+	
+	
+	
+}
+
+
+
+
+
+.medical{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.medical_head{
+	position: relative;
+	background-image: url("../asset/hand-holding-stethoscope.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 200px;
+	width: 100%;
+}
+.medical_head::after{
+	content: 'Medical Cover';
+	background-color: rgba(37, 37, 37,0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 160px;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	font-size: 48px;
+	padding-top: 40px;
+	font-weight: 700;
+}
+.medical_body {
+	max-width: 600px;
+	margin: 30px auto;
+}
+.medical_body_intro{
+	padding: 20px;
+}
+.medical_body_description{
+	padding: 10px 20px;
+}
+.medical_body_description h2{
+	padding: 10px 20px;
+	color: green;
+}
+.medical_body_description h4{
+	padding: 10px 20px;
+}
+.medical_body_description p{
+	padding: 10px 20px;
+}
+
+.Cover_btn{
+	padding: 15px 20px;
+	background-color: rgb(34, 34, 34);
+	color: #fff;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+	margin: 10px 20px;
+
+}
+.Cover_btn:hover{
+	background-color: green;
+
+}
+
+/******************** Footer Section ***************/
+
+
+
+footer{
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: rgb(44, 44, 44);
+	color: #fff;
+	padding: 50px;
+}
+.footer_company_about{
+	max-width: 400px;
+	padding: 20px 5px;
+}
+.footer_company_about h3{
+	padding: 10px 0px;
+	font-size: 30px;
+}
+.footer_company_about p{
+	padding: 10px 0px;
+	font-size: 16px;
+}
+
+.footer_navbar_links{
+	padding: 20px 5px;
+	max-width: 300px;
+}
+.footer_navbar_links ul{
+	list-style: none;
+	padding: 10px 20px;
+}
+.footer_navbar_links ul li{
+	padding: 2px;
+}
+.footer_navbar_links ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+.footer_navbar_links ul li a:hover{
+	color: green;
+}
+.footer_contacts{
+	max-width: 300px;
+}
+.footer_contacts p{
+	margin-top: 10px;
+}
