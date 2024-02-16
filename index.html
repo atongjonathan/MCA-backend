@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MCA</title>
 	<link rel="shortcut icon" href="./asset/LOGO2.png" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" href="./css/lastrespect.css">
+	<link rel="stylesheet" href="./css/medical.css">
+	<link rel="stylesheet" href="./css/registration.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
 </head>
+
 <body>
-	 <!--============= HEADER ============-->
+	<!--============= HEADER ============-->
 	<header>
 		<nav>
 			<div class="logo">
-				<img src="./asset/LOGO2.png"/>
+				<img src="./asset/LOGO2.png" alt="logo" />
 			</div>
 			<ul class="navbar_list">
 				<li><a href="./index.html">Home</a></li>
 				<li><a href="#about">About Us</a></li>
 				<li><a href="#service">Our Service</a></li>
-				<li> <a href="./medical.html">Medical</a></li>
-                <li> <a href="./lastresapect.html">Last Respect</a></li>
+				<li> <a href="#/medical">Medical</a></li>
+				<li> <a href="#/lastrespect">Last Respect</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 			<div class="nav_signin_btn">
-				<button>Sign In</button>
+				<a href="#/login"><button type="button" class="btn btn-success login-btn">Login</button></a>
 			</div>
 
 			<div class="nav_hamburger_menu">
@@ -37,43 +44,47 @@
 			<li><a href="./index.html">Home</a></li>
 			<li><a href="#about">About Us</a></li>
 			<li><a href="#service">Our Service</a></li>
-			<li> <a href="./medical.html">Medical</a></li>
-			<li> <a href="./lastresapect.html">Last Respect</a></li>
+			<li> <a href="#/medical">Medical</a></li>
+			<li> <a href=".#/lastrespect">Last Respect</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 		<div class="nav_signin_btn_active">
-			<button>Sign In</button>
+			<a href="#/login"><button type="button" class="btn btn-success login-btn">Login</button></a>
 		</div>
+
 	</div>
 
-	
+
 	<!--============= BODY ============-->
 
-	<main>
+	<section id="index">
 		<!--======================Section One (introduction)===================-->
-		<section class="intro_section">
+		<div class="intro_section">
 			<div class="intro_content">
 				<div class="intro_container">
 					<h1 class="intro_content_title">
-						Cover Your <span style="color: yellow;">Health</span> and <span style="color: yellow;">Last Respect </span> Expenses
+						Cover Your <span style="color: yellow;">Health</span> and <span style="color: yellow;">Last
+							Respect </span> Expenses
 					</h1>
-					<p class="intro_content_description">						
-						Pave the path to peace of mind by getting tailored insurance solutions, majorly on Health Insurance and Last Respect Expenses
+					<p class="intro_content_description">
+						Pave the path to peace of mind by getting tailored insurance solutions, majorly on Health
+						Insurance and Last Respect Expenses
 					</p>
 					<div class="intro_content_button">
 						<a href="#about"><button class="intro_content_button_explore">Explore More</button></a>
-						<a href="./registration.html"><button class="intro_content_button_register">Register</button></a>
+						<a href="#/registration"><button id="register_btn"
+								class="intro_content_button_register">Register</button></a>
 					</div>
 				</div>
 			</div>
 			<div class="intro_photo">
 				<img src="./asset/introphotofamily.jpg" alt="MCA Family">
 			</div>
-		</section>
+		</div>
 
 		<!--======================Section Two (About)===================-->
-		
-		<section id="about" class="about">
+
+		<div id="about" class="about">
 			<div class="about_header">
 				<h4>About Us</h4>
 				<h1>Why Choose Us</h1>
@@ -86,43 +97,50 @@
 					<div class="about_body_content_card">
 						<h3>Who We Are</h3>
 						<p>
-							MCA-KENYA is a united and compassionate community offering accessible end-of-Life support and medical 
-							assistance. Our diverse members, including individuals, groups, and institutions, collaborate to create a caring network 
+							MCA-KENYA is a united and compassionate community offering accessible end-of-Life support
+							and medical
+							assistance. Our diverse members, including individuals, groups, and institutions,
+							collaborate to create a caring network
 							that prioritizes the wellbeing of our communities, regardless of financial circumstances.
 						</p>
 					</div>
 					<div class="about_body_content_card dark_card">
 						<h3>Our Vision</h3>
 						<p>
-							MCA-KENYA envisions a compassionate society where unity prevails. We strive for accessible adipisicing
-							and dignified end-of-life support and medical assistance,regardless of financial circumstances. Our Vision 
-							is to be a beacon of solidarity, providing comfort and shared humanity to communities in both rural and urban settings.
+							MCA-KENYA envisions a compassionate society where unity prevails. We strive for accessible
+							adipisicing
+							and dignified end-of-life support and medical assistance,regardless of financial
+							circumstances. Our Vision
+							is to be a beacon of solidarity, providing comfort and shared humanity to communities in
+							both rural and urban settings.
 						</p>
 					</div>
 					<div class="about_body_content_card">
 						<h3>Our Mission</h3>
 						<p>
-							Our mission is to assist individuals in both rural and urban areas, providing respectful end-of-Life support and access to
-							medical assistance for members and their  families, regardless of financial situations. This is achieved through the joint
+							Our mission is to assist individuals in both rural and urban areas, providing respectful
+							end-of-Life support and access to
+							medical assistance for members and their families, regardless of financial situations. This
+							is achieved through the joint
 							contributions of resources by individuals, groups, or institutions joining as members.
 						</p>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 
 		<!--======================Section Three (Services)===================-->
 
 
-		<section id="service" class="service">
+		<div id="service" class="service">
 
 			<div class="service_header">
 				<h4>Service</h4>
 				<h1>What We Offer</h1>
 				<p>
-					We provide beneficial insurance for you 
-					and your family that covers medical insurance 
-					and last respect expenses.  
+					We provide beneficial insurance for you
+					and your family that covers medical insurance
+					and last respect expenses.
 				</p>
 			</div>
 
@@ -135,10 +153,11 @@
 					<div class="service_body_content">
 						<h3>Medical Cover</h3>
 						<p>
-							MCA-KENYA provides comprehensive inpatient medical coverage, ensuring that our members 
-							have access to essential healthcare services when needed, contributing to their overall well-being. 
+							MCA-KENYA provides comprehensive inpatient medical coverage, ensuring that our members
+							have access to essential healthcare services when needed, contributing to their overall
+							well-being.
 						</p>
-						<div><a href="./medical.html"><button>Read More</button></a></div>
+						<div><a href="#/medical"><button>Read More</button></a></div>
 					</div>
 				</div>
 
@@ -151,28 +170,450 @@
 						<p>
 							MCA-KENYA understands the significance of dignified farewells.
 							We provide last Respect services, offering support and arrangements
-							that honor the memory of your loved ones with utmost sensitivity and care. 
+							that honor the memory of your loved ones with utmost sensitivity and care.
 						</p>
-						<a href="./lastresapect.html"><button>Read More</button></a>
+						<a href="#/lastrespect"><button>Read More</button></a>
 					</div>
 				</div>
 			</div>
 
-		</section>
+		</div>
 
 
 		<!--======================Section Four (Register)===================-->
 
 
-		<section class="register">
+		<div class="register">
 			<div class="register_body">
 				<h2>Start Your Journey</h2>
 				<p>Join over a million people already using Member Care Alliance Insurance</p>
-				<a href="./registration.html"><button>Register</button></a></div>
+				<a href="#/registration"><button>Register</button></a>
 			</div>
-		</section>
+		</div>
+		</div>
 
-	</main>
+	</section>
+
+	<section id="lastrespect" class="lastrespect">
+
+		<div class="lastrespect_head"></div>
+		<div class="lastrespect_body">
+			<p class="lastrespect_body_intro">
+				MCA-KENYA understands the significance of dignified farewells.
+				We provide last Respect services, offering support and arrangements
+				that honor the memory of your loved ones with utmost sensitivity and care.
+				These expenses can vary widely based on cultural, religious, and personal preferences.
+			</p>
+			<div class="lastrespect_body_description">
+				<h2>Benefits</h2>
+				<div>
+
+					<h4>Funeral Services:</h4>
+					<p>This includes the services provided by a funeral home, such as preparation of the body, use of
+						facilities for visitation and ceremonies, and coordination of the overall funeral process.</p>
+
+					<h4>Casket or Urn: </h4>
+					<p>The cost of a casket or urn can vary depending on the material, design, and features. Some
+						families may choose a traditional casket for a burial, while others opt for cremation with an
+						urn.</p>
+
+					<h4>Burial or Cremation Costs:</h4>
+					<p>If the deceased is to be buried, there will be costs associated with the burial plot, grave
+						marker, and opening/closing of the grave. For cremation, there may be fees for the cremation
+						process and interment of ashes.</p>
+
+					<h4>Transportation: </h4>
+					<p>Expenses related to transporting the deceased from the place of death to the funeral home and, if
+						necessary, to the burial or cremation site.</p>
+
+					<h4>Memorial and Ceremony Expenses:</h4>
+					<p>Costs for organizing memorial services, religious ceremonies, or other rituals. This may include
+						fees for clergy, musicians, or speakers.</p>
+
+					<h4>Floral Arrangements:</h4>
+					<p>The purchase of flowers or other memorial decorations for the funeral or memorial service.</p>
+
+					<h4>Printed Materials:</h4>
+					<p>Creating and printing funeral programs, memorial cards, or other materials distributed during the
+						service.</p>
+
+					<h4>Obituary Costs:</h4>
+					<p>Fees associated with publishing an obituary in newspapers or online platforms.</p>
+
+					<h4>Reception or Catering Costs:</h4>
+					<p>If there is a post-funeral gathering or reception, expenses related to catering, venue rental, or
+						refreshments may be incurred.</p>
+
+					<p>It's important to note that last respect expenses can add up quickly, and the financial burden
+						can be challenging for grieving families. Some individuals choose to plan for these expenses in
+						advance through pre-need funeral arrangements or funeral insurance, which can help ease the
+						financial strain on loved ones during a difficult time.</p>
+
+				</div>
+
+				<a href="#/registration"><button class="Cover_btn">Get Last Respect Expenses</button></a>
+			</div>
+		</div>
+
+	</section>
+
+
+	<section id="medical" class="medical">
+
+		<div class="medical_head"></div>
+		<div class="medical_body">
+			<p class="medical_body_intro">
+				MCA-KENYA provides comprehensive inpatient medical coverage, ensuring that our members
+				have access to essential healthcare services when needed, contributing to their overall
+				well-being.<br><br>
+				Medical insurance is also a financial safety net for your healthcare needs. With a medical insurance
+				policy, you're protected from the high costs associated with medical care.
+			</p>
+			<div class="medical_body_description">
+				<h2>Benefits</h2>
+				<div>
+
+					<h4>Financial Protection:</h4>
+					<p>When you have medical insurance, you won't have to bear the full burden of your healthcare
+						expenses. Instead, you pay a regular premium, which is like a membership fee that keeps your
+						coverage active.</p>
+
+					<h4>Coverage for Medical Expenses:</h4>
+					<p>Your insurance plan covers a range of medical services, including doctor visits, hospital stays,
+						surgeries, and prescription medications. This means you can get the care you need without
+						worrying about the entire cost.</p>
+
+					<h4>Deductibles and Co-payments:</h4>
+					<p>Before your insurance kicks in, you may have a deductible, which is an amount you pay out of
+						pocket. Once you've met the deductible, you might still have co-payments or co-insurance, but
+						the insurance takes care of a significant portion of the expenses.</p>
+
+					<h4>Prescription Medications: </h4>
+					<p>Your insurance typically includes coverage for prescription medications. This ensures that you
+						can afford the medications prescribed by your healthcare provider.</p>
+
+					<p>Remember, medical insurance is not just for emergencies; it's a tool to help you manage your
+						health and well-being. By having coverage, you gain peace of mind knowing that you're
+						financially protected when it comes to your healthcare needs. It's important to choose a plan
+						that aligns with your needs and preferences, considering factors like premiums, deductibles, and
+						the network of providers available."</p>
+
+				</div>
+
+				<a href="./registration.html"><button class="Cover_btn">Get Medical Cover</button></a>
+			</div>
+		</div>
+
+
+	</section>
+
+
+	<section id="registration" class="registration">
+		<div class="registration_header">
+			<h1>Register Your Account</h1>
+			<p>Enter Your Personal Data</p>
+		</div>
+		<div class="registration_body container">
+			<div class="container">
+				<form action="" id="form" class="row needs-validation container" novalidate>
+
+					<div class="row">
+						<div class="col">
+							<div class="registration_input">
+								<label for="f_name" class="form-label">First Name</label>
+								<input id="f_name" class="form-control" name="f_name" type="text"
+									placeholder="First Name *" autocomplete="given-name">
+							</div>
+						</div>
+						<div class="col">
+							<div class="registration_input">
+								<label for="l_name" class="form-label"></label>Last Name</label>
+								<input id="l_name" class="form-control" name="l_name" type="text"
+									placeholder="Last Name *" required autocomplete="additional-name">
+								<div class="invalid-feedback">
+									Please Enter Your Last Name
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="registration_input">
+								<label for="id_no" class="form-label">ID Number</label>
+								<input id="id_no" class="form-control" name="id_no" type="text"
+									placeholder="ID Number *" required pattern="[0-9]{8}">
+								<div class="invalid-feedback">
+									Please Enter Your ID Number
+								</div>
+							</div>
+
+						</div>
+						<div class="col">
+							<div class="registration_input">
+								<label for="dob" class="form-label"></label>Date Of Birth</label>
+								<input id="dob" class="form-control" name="dob" type="date" placeholder="D.O.B."
+									required>
+								<div class="invalid-feedback">
+									Please enter a valid Date Of Birth.
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<div class="registration_input">
+								<label for="marital" class="form-label">Marital Status</label>
+								<select name="marital" class="form-control" id="marital" required>
+									<option value="">Select Marital Status</option>
+									<option value="single">Single</option>
+									<option value="married">Married</option>
+								</select>
+								<div class="invalid-feedback">
+									Choose Marital Status!
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="registration_input">
+								<label for="gender" class="form-label">Gender</label>
+								<select name="gender" id="gender" class="form-control" required>
+									<option value="">Select Your Gender</option>
+									<option value="M">Male</option>
+									<option value="F">Female</option>
+								</select>
+								<div class="invalid-feedback">
+									Select Your Gender
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<div class="registration_input">
+								<label for="po_box" class="form-label">Postal Address</label>
+								<input id="po_box" name="po_box" class="form-control" type="text"
+									placeholder="Postal Address *" required>
+								<div class="invalid-feedback">
+									Please Enter Your Postal Address
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="registration_input">
+								<label for="phone_no" class="form-label">Mobile Number</label>
+								<input id="phone_no" class="form-control" name="phone_no" type="tel"
+									placeholder="0712345678 *" required pattern="^07\d{8}$">
+								<div class="invalid-feedback">
+									Please Enter Phone Number
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<div class="registration_input">
+								<label for="county" class="form-label">County</label>
+								<select class="select" class="form-control" name="county" id="county" required>
+									<option value="" selected="selected">Select County ...</option>
+									<option value="Baringo">Baringo</option>
+									<option value="Bomet">Bomet</option>
+									<option value="Bungoma">Bungoma</option>
+									<option value="Busia">Busia</option>
+									<option value="Elgeyo Marakwet">Elgeyo Marakwet</option>
+									<option value="Embu">Embu</option>
+									<option value="Garissa">Garissa</option>
+									<option value="Homa Bay">Homa Bay</option>
+									<option value="Isiolo">Isiolo</option>
+									<option value="Kajiado">Kajiado</option>
+									<option value="Kakamega">Kakamega</option>
+									<option value="Kericho">Kericho</option>
+									<option value="Kiambu">Kiambu</option>
+									<option value="Kilifi">Kilifi</option>
+									<option value="Kirinyaga">Kirinyaga</option>
+									<option value="Kisii">Kisii</option>
+									<option value="Kisumu">Kisumu</option>
+									<option value="Kitui">Kitui</option>
+									<option value="Kwale">Kwale</option>
+									<option value="Laikipia">Laikipia</option>
+									<option value="Lamu">Lamu</option>
+									<option value="Machakos">Machakos</option>
+									<option value="Makueni">Makueni</option>
+									<option value="Mandera">Mandera</option>
+									<option value="Marsabit">Marsabit</option>
+									<option value="Meru">Meru</option>
+									<option value="Migori">Migori</option>
+									<option value="Mombasa">Mombasa</option>
+									<option value="Murang'a">Murang'a</option>
+									<option value="Nairobi City">Nairobi City</option>
+									<option value="Nakuru">Nakuru</option>
+									<option value="Nandi">Nandi</option>
+									<option value="Narok">Narok</option>
+									<option value="Nyamira">Nyamira</option>
+									<option value="Nyandarua">Nyandarua</option>
+									<option value="Nyeri">Nyeri</option>
+									<option value="Samburu">Samburu</option>
+									<option value="Siaya">Siaya</option>
+									<option value="Taita-Taveta">Taita-Taveta</option>
+									<option value="Tana River">Tana River</option>
+									<option value="Tharaka-Nithi">Tharaka-Nithi</option>
+									<option value="Trans Nzoia">Trans Nzoia</option>
+									<option value="Turkana">Turkana</option>
+									<option value="Uasin Gishu">Uasin Gishu</option>
+									<option value="Vihiga">Vihiga</option>
+									<option value="Wajir">Wajir</option>
+									<option value="West Pokot">West Pokot</option>
+								</select>
+								<div class="invalid-feedback">
+									Select Your County
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="registration_input">
+								<label for="email" class="form-label">Email Address</label>
+								<input id="email" class="form-control" name="email" type="email" placeholder="Email *"
+									autocomplete="email" required>
+								<div class="invalid-feedback">
+									Please Enter Your Email
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+
+						<div class="col">
+							<div class="alert registration_input">
+								<label for="password-input">Password</label>
+								<div class="">
+									<input type="password" class="form-control" placeholder="Type your password *"
+										aria-label="password" aria-describedby="password" id="password-input"
+										name="password" required />
+									<div class="invalid-feedback">Enter A Valid Password</div>
+								</div>
+							</div>
+							<div class="alert px-4 py-3 mb-0 d-none" role="alert" data-mdb-color="warning"
+								id="password-alert">
+								<ul class="list-unstyled mb-0">
+									<li class="requirements leng">
+										<i class="fas fa-check text-success me-2"></i>
+										<i class="fas fa-times text-danger me-3"></i>
+										Your password must have at least 8 chars
+									</li>
+									<li class="requirements big-letter">
+										<i class="fas fa-check text-success me-2"></i>
+										<i class="fas fa-times text-danger me-3"></i>
+										Your password must have at least 1 big letter.
+									</li>
+									<li class="requirements num">
+										<i class="fas fa-check text-success me-2"></i>
+										<i class="fas fa-times text-danger me-3"></i>
+										Your password must have at least 1 number.
+									</li>
+									<li class="requirements special-char">
+										<i class="fas fa-check text-success me-2"></i>
+										<i class="fas fa-times text-danger me-3"></i>
+										Your password must have at least 1 special char.
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col">
+							<div class="registration_input">
+								<label for="confirmPassword">Confirm Password</label>
+								<input name="confirmPassword" type="password" autocomplete="off"
+									class="form-control form-control-sm" id="confirmPassword"
+									placeholder="Confirm Password *" aria-describedby="inputGroupPrepend" required>
+								<div class="invalid-feedback">
+									Password not a match.
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="registration_input">
+
+				<button style="width: 85%; margin: 10px auto;" id="submitBtn" class="btn btn-success"
+					type="">Submit</button>
+
+			</div>
+
+
+			</form>
+		</div>
+		</div>
+	</section>
+
+
+	<section id="login">
+
+		<div class="">
+			<div class="container-fluid h-custom">
+				<div class="row d-flex justify-content-center align-items-center h-100">
+					<div class="col-md-9 col-lg-6 col-xl-5">
+						<img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+							class="img-fluid" alt="Sample image">
+					</div>
+					<div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+						<form>
+							<!-- Email input -->
+							<div class="form-outline mb-4">
+								<label class="form-label" for="form3Example3">Email address</label>
+								<input type="email" id="form3Example3" class="form-control"
+									placeholder="Enter email address" />
+							</div>
+
+							<!-- Password input -->
+							<div class="form-outline mb-3">
+								<label class="form-label" for="form3Example4">Password</label>
+								<input type="password" id="form3Example4" class="form-control"
+									placeholder="Enter password" />
+							</div>
+
+							<div class="d-flex justify-content-between align-items-center">
+								<!-- Checkbox -->
+								<div class="form-check mb-0">
+									<input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+									<label class="form-check-label" for="form2Example3">
+										Remember me
+									</label>
+								</div>
+								<!-- <br>
+								<hr> -->
+								<a href="#!" style="visibility: hidden;" class="">Forgot password?</a>
+							</div>
+
+							<div class="text-center text-lg-start mt-4 pt-2">
+								<a href="#/login"><button type="button" class="btn btn-success login-btn">Login</button></a>
+								<p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#/registration"
+										class="link-success">Register</a></p>
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+			<a href="#!" class="text-white me-4">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a href="#!" class="text-white me-4">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<a href="#!" class="text-white me-4">
+				<i class="fab fa-google"></i>
+			</a>
+			<a href="#!" class="text-white">
+				<i class="fab fa-linkedin-in"></i>
+			</a>
+		</div>
+		<!-- Right -->
+		</div>
+		</div>
+	</section>
 
 	<!--============= Footer ============-->
 
@@ -180,8 +621,9 @@
 		<div class="footer_company_about">
 			<h3>Members Care Alliance - Kenya</h3>
 			<p>
-				MCA-KENYA is a united and compassionate community offering accessible end-of-Life support and medical 
-				assistance. Our diverse members, including individuals, groups, and institutions, collaborate to create a caring network 
+				MCA-KENYA is a united and compassionate community offering accessible end-of-Life support and medical
+				assistance. Our diverse members, including individuals, groups, and institutions, collaborate to create
+				a caring network
 				that prioritizes the wellbeing of our communities, regardless of financial circumstances.
 			</p>
 			<!--+===== social Media Handles ================+-->
@@ -192,10 +634,10 @@
 				<li><a href="./index.html">Home</a></li>
 				<li><a href="#about">About Us</a></li>
 				<li><a href="#service">Our Service</a></li>
-				<li> <a href="./medical.html">Medical</a></li>
-				<li> <a href="./lastresapect.html">Last Respect</a></li>
+				<li> <a href="#/medical">Medical</a></li>
+				<li> <a href="#/lastrespect">Last Respect</a></li>
 				<li><a href="#contact">Contact</a></li>
-				<li>Sign In</li>
+				<li><a href="#/login">Log In</a></li>
 			</ul>
 		</div>
 
@@ -204,6 +646,8 @@
 			<p>Location : <span>Top Brass Plaza, <br>Outering Road, <br>Naxt to Naivas</span></p>
 		</div>
 	</footer>
-	<script src="index.js"></script>
+	<script src="./js/index.js"></script>
+	<script src="./js/registration.js"></script>
 </body>
+
 </html>
