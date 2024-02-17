@@ -212,11 +212,12 @@ addEventListener("DOMContentLoaded", (event) => {
             if (!FormIsValid())
             {
                 disableBtn()
+                form.classList.add("was-validated")
             }
             else
             {
                 console.log(currentData);
-                alert("Successful")
+                alert("Registration Successful")
                 fetch("http://localhost:8000/register",
                 {
                 method: "POST",
@@ -229,11 +230,13 @@ addEventListener("DOMContentLoaded", (event) => {
                 .then((response)=>response.json())
                 .then((data)=>
                 {
-                    console.log(data);
+                    console.log(JSON.stringify(data, null, 2));
+                    console.log(data)
                     if (data.token !== undefined)
                     {
-                        localStorage.setItem("User", data);
-                        window.location.replace("./index.html")
+                        localStorage.setItem("UserToken", data.token);
+                        console.log(localStorage.getItem("UserToken"));
+                        window.location.replace("./index.html");
                     }
                     else
                     {
