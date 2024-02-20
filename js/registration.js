@@ -218,7 +218,7 @@ addEventListener("DOMContentLoaded", (event) => {
             {
                 console.log(currentData);
                 alert("Registration Successful")
-                fetch("http://localhost:8000/register",
+                fetch("https://229e-102-23-139-23.ngrok-free.app/register",
                 {
                 method: "POST",
                 headers:{
