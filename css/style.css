@@ -210,7 +210,7 @@ main{
 	height: fit-content;
 }
 .intro_content_title{
-	font-size: 72px;
+	font-size: 55px;
 	color: #fff;
 }
 .intro_content_description{
@@ -384,6 +384,10 @@ a .intro_content_button_explore{
 }
 .about_header h1{
 	font-size: 81px;
+}
+.about_header p
+{
+	padding: 0 150px;
 }
 .about_body{
 	margin-top: 20px;
