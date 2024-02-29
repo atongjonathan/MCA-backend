@@ -427,6 +427,25 @@ a .intro_content_button_explore{
 	color: #fff;
 	border-radius: 20px;
 }
+.rates_content
+{
+	max-width: 800px !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 10px;
+}
+.rates_img
+{
+	width: 100%;
+	border-radius: 20px;
+	border: 1px solid black;
+}
+.rates_card
+{
+	width: 100%;
+	max-width: 550px !important;
+}
 
 
 /******** Media Query for Responsive *********/
